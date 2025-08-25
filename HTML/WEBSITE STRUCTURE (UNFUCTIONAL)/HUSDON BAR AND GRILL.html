@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HUDSON BAR & GRILL</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #333333;
+      --accent: #FF6F00;
+      --background: #F9F9F9;
+      --header-font: 'Playfair Display', serif;
+      --body-font: 'Open Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--body-font);
+      background-color: var(--background);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: var(--header-font);
+      font-size: 2.5rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--primary);
+      z-index: 999;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero div {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      font-family: var(--header-font);
+    }
+
+    .hero p {
+      margin: 10px 0 20px;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background-color: var(--accent);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e55d00;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: var(--header-font);
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background-color: white;
+      padding: 20px;
+      border-left: 5px solid var(--accent);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    input, textarea, button {
+      font-family: var(--body-font);
+      font-size: 1em;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      background-color: var(--accent);
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #e55d00;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        font-size: 0.85rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HUDSON BAR & GRILL</h1>
+    <p>Where Flavor Meets the Hudson</p>
+  </header>
+
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#promotions">Promotions</a>
+    <a href="#reservation">Reservations</a>
+    <a href="#order">Order</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h2>Welcome to Hudson Bar & Grill</h2>
+      <p>Modern Cuisine & Craft Cocktails on the River</p>
+      <button class="btn">Explore Menu</button>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Signature Burger</h3>
+        <p>Beef patty, cheddar, house sauce, brioche bun - R220</p>
+      </div>
+      <div class="menu-item">
+        <h3>Grilled Salmon</h3>
+        <p>Lemon butter glaze, seasonal vegetables - R250</p>
+      </div>
+      <div class="menu-item">
+        <h3>Craft Cocktails</h3>
+        <p>Locally inspired spirits and mixers - R180</p>
+      </div>
+      <div class="menu-item">
+        <h3>Caesar Salad</h3>
+        <p>Crisp romaine, parmesan, house dressing - R180</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="promotions">
+    <h2>Promotions</h2>
+    <ul>
+      <li><strong>Happy Hour:</strong> 5-7pm – 50% off drinks</li>
+      <li><strong>Brunch:</strong> Free mimosa on weekends</li>
+    </ul>
+  </section>
+
+  <section id="reservation">
+    <h2>Reserve a Table</h2>
+    <form action="#">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="date" required>
+      <input type="time" required>
+      <input type="number" placeholder="Guests" required>
+      <textarea placeholder="Special Requests"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="order">
+    <h2>Order Online</h2>
+    <p>Order via our delivery partners and enjoy at home.</p>
+    <button class="btn">Order Now</button>
+  </section>
+
+  <section id="blog">
+    <h2>Latest from the Blog</h2>
+    <article>
+      <h3>Chef's Picks for Fall</h3>
+      <p>Warm up with our seasonal menu, curated by Chef James.</p>
+    </article>
+    <article>
+      <h3>Live Jazz Nights</h3>
+      <p>Join us Fridays at 8pm for smooth music & dining.</p>
+    </article>
+    <form action="#">
+      <h4>Subscribe to Newsletter</h4>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </
